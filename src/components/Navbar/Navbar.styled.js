@@ -1,14 +1,8 @@
 import styled from 'styled-components'
-import { dividerBeige } from '../../assets'
 
 export const NavbarContent = styled.div`
   align-items: center;
   display: grid;
-
-    /* :after{
-      background-image: url(${dividerBeige});
-
-    } */
 
   #menu {
     display: grid;
@@ -73,8 +67,9 @@ export const Logo = styled.nav`
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 1;
-  width: 120px;
-  text-align: center;
+  width: 135px;
+  text-align: start;
+  padding: 5px 12px;
 
   h3 {
     line-height: 27px;

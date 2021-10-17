@@ -16,10 +16,14 @@ html, body, #root {
   height: 100%;
 }
 
-h1 {
-  font-size: 32px;
+h1, h2, h3, h3, h5 {
+  font-family: Yaldevi,sans-serif;
 }
 
+p {
+  line-height: 27px;
+  letter-spacing: 1.3px;
+}
 
 body {
   -webkit-font-smoothin: antialiased !important;
@@ -40,10 +44,11 @@ body {
     list-style: none;
   }
 
+  #companyName {
+    color: #fa7b6a;
+  }
+
   @media screen and (max-width: 500px) {
-    h1 {
-      font-size: 15px;
-    }
 
     h2 {
       font-size: 10px;
@@ -54,31 +59,20 @@ body {
 `
 
 export const TitleH1 = styled.h1`
-  font-family: 'Cinzel', serif;
+  color: #1c1c1c;
   width: 100%;
   white-space: pre-wrap;
   transition-timing-function: ease;
   transition-duration: 0.9s;
   transition-delay: 0.171429s;
   padding-bottom: 10px;
-  font-size: 2em;
-  font-weight: 300;
-
-  :after {
-    content: '';
-    display: block;
-    border-bottom: 1px solid ${theme.colors.gold10};
-    width: 100%;
-    max-width: 60px;
-    height: 2px;
-    margin-top: 8px;
-  }
+  font-size: 46px;
+  line-height: 120%;
 
 `
 
 export const TitleH2 = styled.h2`
-  font-family: 'Cinzel', serif;
-  font-size:1.7em;
+  font-size: 1.7em;
   line-height: 1.2em;
   font-weight: 300;
   text-align: center;

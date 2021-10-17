@@ -2,41 +2,46 @@ import styled from 'styled-components'
 import { theme } from '../../theme'
 
 export const Container = styled.div`
-
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 65%;
   padding: 70px 0;
 
   h2 {
-    font-family: 'DM Serif Display',sans-serif;
     font-size: 64px;
     font-weight: 500;
     line-height: 120%;
-    text-align: center;
     margin-bottom: 24px;
+    text-align: center;
   }
 
   h3 {
-    text-align: center;
-    margin-bottom: 16px;
+    color: ${theme.black20};
     font-family: 'Henderson Bold', sans-serif;
-    color: #1c1c1c;
     font-size: 14px;
-    line-height: 170%;
     font-weight: 700;
     letter-spacing: 1px;
+    line-height: 170%;
+    margin-bottom: 16px;
+    text-align: center;
     text-transform: uppercase;
   }
 
   @media screen and (max-width: 900px) {
+    max-width: 100%;
     padding: 0 20px;
+  }
+
+  @media screen and (max-width: 479px) {
+    h2 {
+      font-size: 32px;
+      padding-top: 25px;
+    }
   }
 `
 
 
 export const ContainerTitle = styled.div`
-    align-self: center;
+  align-self: center;
 
   h5:nth-child(3) {
     padding-top: 30px;
@@ -47,33 +52,29 @@ export const Services = styled.div`
 
   @media screen and (max-width: 900px) {
     justify-self: center;
-    padding: 20px 0;
+    text-align: center;
   }
 
 `
 
 export const ContainerHeader = styled.div`
-   justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-    padding-top: 30px;
-
-    grid-column-gap: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-column-gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 100%;
 
   p {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 15px;
     font-size: 1rem;
-    line-height: 1.3;
+    margin-bottom: 24px;
+    padding-bottom: 0;
+    padding-top: 25px;
 
-    display: -webkit-box;
-    -webkit-line-clamp: 9;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    color: ${theme.grey10};
+
+    line-height: 170%;
   }
 
   img {
@@ -81,8 +82,12 @@ export const ContainerHeader = styled.div`
   }
 
   @media screen and (max-width: 1300px) {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 0;
+  }
 
-
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
   }
 
 `

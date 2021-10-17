@@ -45,8 +45,10 @@ export const ContainerContact = styled.div`
   }
 
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 479px) {
     padding: 0 20px;
+    padding-top: 20px;
+
 
     img {
       width: 80%;
@@ -58,25 +60,13 @@ export const ContainerContact = styled.div`
 export const ContainerSlider = styled.div`
     background: #F8FAFA;
 
-    img {
-      width: 100%;
-    }
-
-
     #dividerBottom{
       margin-bottom: -1%;
-
     }
 
-    h3 {
-    font-weight: 400;
-    letter-spacing: 1.8px;
-    line-height: 25.5px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 5%;
+    img {
+    width: 100%;
   }
-
 
 `
 

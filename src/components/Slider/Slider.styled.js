@@ -1,6 +1,17 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  h3 {
+    font-size: 1.5em;
+    padding-top: 70px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    line-height: 25.5px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
   .awssld__content {
     background-color: transparent;
   }
@@ -13,20 +24,30 @@ export const Container = styled.div`
     max-height: 450px;
   }
 
+
   .awssld {
     max-height: 450px;
   }
 
-  h3 {
-    font-size: 1.5em;
-    font-weight: 300;
+
+  .awssld__timer.awssld__timer--run {
+    opacity: 0;
   }
 
-  @media screen and (max-width: 900px) {
-  .awssld__container {
-    padding-bottom: 32%;
+
+  @media screen and (max-width: 479px) {
+    .awssld__container {
+        padding-bottom: calc(var(--slider-height-percentage) * 2.25);
+    }
+
+    .awssld__wrapper {
+      max-height: none;
+    }
+
+    .awssld {
+      max-height: none;
+    }
   }
-}
 
 `
 export const Slider = styled.div`
@@ -56,6 +77,13 @@ export const Slider = styled.div`
     letter-spacing: 1.8px;
     line-height: 25.5px;
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 479px) {
+
+    p {
+      padding: 0 25px;
+    }
   }
 
   `

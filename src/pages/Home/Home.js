@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 
-import { divider, dividerTop, laptop } from '../../assets/index'
+import { divider, laptop } from '../../assets/index'
 
-
-import { Navbar } from '../../components/Navbar/Navbar';
 import SliderComponent from '../../components/Slider/Slider'
 import Header from '../../components/Header/Header'
 import Services from '../../components/Services/Services'
@@ -17,7 +15,6 @@ import {
   ContainerSlider,
   ContainerContact,
   SubTitle,
-  Title,
 } from  './Home.styled'
 
 import { TitleH2 } from '../../GlobalStyles'
@@ -27,12 +24,10 @@ class Home extends Component{
   render (){
     return(
       <Container>
-        <Navbar/>
         <Header/>
           <About/>
           <Services/>
         <ContainerSlider className="div-carousel">
-          {/* <img src={dividerTop} alt="Port Stephens Cleaning Services" /> */}
           <SliderComponent/>
           <img src={divider} id="dividerBottom"alt="Port Stephens Cleaning Services" />
         </ContainerSlider>

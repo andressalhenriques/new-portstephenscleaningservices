@@ -37,12 +37,12 @@ class About extends Component{
                 of the utmost importance. Many of our customers live in other cities,
                 and we encourage them to consider us their local “eyes and ears” for
                 their investments. As such, we are available by phone or email 24/7,
-                all year round
+                all year round.
               </p>
             </ContainerTitle>
           </Services>
           <Services>
-              <img src={customerSatisfaction} id="dividerBottom"alt="Port Stephens Cleaning Services" />
+              <img src={highQualityService} id="dividerBottom"alt="Port Stephens Cleaning Services" />
             <ContainerTitle>
               <SubTitle>Customer satisfaction</SubTitle>
               <p>
@@ -54,7 +54,7 @@ class About extends Component{
             </ContainerTitle>
           </Services>
           <Services>
-            <img src={highQualityService} id="dividerBottom"alt="Port Stephens Cleaning Services" />
+            <img src={customerSatisfaction} id="dividerBottom"alt="Port Stephens Cleaning Services" />
             <ContainerTitle>
               <SubTitle>High quality service</SubTitle>
                 <p>
