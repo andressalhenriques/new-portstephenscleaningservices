@@ -15,7 +15,7 @@ export function Navbar () {
 
   const ROUTES = [
     { page: 'home', subtitle: 'Home' },
-    { page: 'help', subtitle: 'Help' },
+    { page: 'career', subtitle: 'Career' },
     { page: 'contact', subtitle: 'Contact' }
   ]
 
@@ -27,8 +27,6 @@ export function Navbar () {
     nav.classList.toggle('active')
   }
   ROUTES.map((route) => ( console.log(route.page)))
-
-
   return (
       <NavbarContent>
           <NavContainer  id="nav">
@@ -37,7 +35,7 @@ export function Navbar () {
               <h3>Port Stephens</h3>
               <h4>Cleaning Services</h4>
             </Logo>
-            <MenuMobile id="menu-mobile" active={menuOpen} onClick={toggleMenu} onTouchStart={toggleMenu}>
+            <MenuMobile id="menu-mobile" active={menuOpen} onClick={toggleMenu} >
               Menu
               <span id="hamburger"></span>
             </MenuMobile>

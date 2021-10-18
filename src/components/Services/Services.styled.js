@@ -1,20 +1,46 @@
 import styled from 'styled-components'
-import { homeShootingstar, iconStar } from '../../assets/index'
+import { iconStar } from '../../assets/index'
 
 export const Container = styled.div`
   text-align: center;
-  padding: 110px 0;
-  background-image: url(${homeShootingstar});
-  background-position: 50% 100%;
-  background-size: auto;
-  background-repeat: no-repeat;
-
-
+  padding: 165px 0;
   background-color: #F6F6F1;
+  position: relative;
 
-@media screen and (max-width: 1000px) {
 
+  #dogShootingstar, #shootingstar {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+  }
 
+  #dogShootingstar {
+    position: absolute;
+    left: 30%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+  }
+
+  #shootingstar {
+    position: absolute;
+    top: 3%;
+    right: 35%;
+    bottom: auto;
+  }
+
+@media screen and (max-width: 900px) {
+  padding: 25px 0 100px 0;
+}
+
+@media screen and (max-width: 479px) {
+  #dogShootingstar {
+    left: 0;
+  }
+  #shootingstar {
+    top: 25%;
+    right: 21%;
+  }
 }
 `
 
@@ -28,12 +54,8 @@ export const ContainerGrid = styled.div`
   text-align: initial;
   padding-bottom: 50px;
 
-  #companyName {
-    color: #fa7b6a;
-  }
-
   p {
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     color: #1c1c1c;
     font-size: 16px;
     line-height: 30px;
@@ -44,7 +66,6 @@ export const ContainerGrid = styled.div`
     padding-left: 40px;
     text-align: initial;
     font-family: Raleway, sans-serif;
-
   }
 
   p:nth-child(1) {
@@ -54,39 +75,32 @@ export const ContainerGrid = styled.div`
     padding-left: 0;
   }
 
+  @media screen and (max-width: 900px) {
+    padding: 0 20px 50px 20px;
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 479px) {
+    p:nth-child(1) {
+      padding-top: 35px;
+    }
+  }
+
 `
-// export const Title = styled.h2`
-//   font-family: 'Cinzel',serif;
-//   font-size: 2em;
-//   line-height: 25.5px;
-//   font-weight: 300;
-//   width: 100%;
-//   white-space: pre-wrap;
-//   transition-timing-function: ease;
-//   transition-duration: 0.9s;
-//   transition-delay: 0.171429s;
-//   font-size: 3em;
-//   padding-bottom: 40px;
-
-
-//   @media screen and (max-width: 500px) {
-//     grid-column-end: 4;
-//     font-size: 1.5em;
-//   }
-
-// `
 
 export const Title = styled.h2`
-    margin-top: 0px;
-    margin-bottom: 24px;
-    font-family: Yaldevi, sans-serif;
-    color: #1c1c1c;
-    font-size: 46px;
-    line-height: 120%;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  font-family: Yaldevi, sans-serif;
+  color: #1c1c1c;
+  font-size: 46px;
+  line-height: 120%;
 
+  @media screen and (max-width: 479px) {
+    font-size: 36px;
+  }
 `
 
-export const ContainerP = styled.h2`
-    width: fit-content;
-
+export const ContainerP = styled.div`
+  width: fit-content;
 `

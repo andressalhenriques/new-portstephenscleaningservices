@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
 
-import { header, divider, dividerTop } from '../../assets/index'
 import AwesomeSlider from 'react-awesome-slider';
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
+
 import 'react-awesome-slider/dist/styles.css';
 
-import { Navbar } from '../../components/Navbar/Navbar';
 
 import {
   Container,
   Slider,
 } from  './Slider.styled'
 
-class SliderComponent extends Component{
+const AutoplaySlider = withAutoplay(AwesomeSlider);
 
+class SliderComponent extends Component{
   render (){
     return(
       <Container>
         <h3>What our customers say</h3>
-        <AwesomeSlider play={true}>
+        <AutoplaySlider
+          play={true}
+          cancelOnInteraction={false}
+          interval={6000}
+          infinite={true}
+        >
           <div>
           <Slider>
             <p>
@@ -60,7 +66,7 @@ class SliderComponent extends Component{
             <h5>Sharon - Nelson bay</h5>
           </Slider>
           </div>
-        </AwesomeSlider>
+        </AutoplaySlider>
       </Container>
     )
   }

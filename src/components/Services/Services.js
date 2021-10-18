@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { header } from '../../assets/index'
+import { dogShootingstar, shootingstar } from '../../assets/index'
 
 import {
   Container,
@@ -9,13 +9,13 @@ import {
   Title,
 } from  './Services.styled'
 
-import { TitleH2 } from '../../GlobalStyles'
-
 class Services extends Component{
 
   render (){
     return(
       <Container>
+        <img src={dogShootingstar} id="dogShootingstar" alt="family" />
+        <img src={shootingstar} id="shootingstar" alt="family" />
         <ContainerGrid>
           <div>
             <Title>Relax knowing <span id="companyName">Port Stephens Cleaning Services</span> have got  your back</Title>
