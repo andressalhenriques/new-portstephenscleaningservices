@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import Routes from './routes';
+import React, { Fragment } from 'react'
+import Routes from './routes'
 import Helmet from 'react-helmet'
 import { GlobalStyle } from './GlobalStyles'
 

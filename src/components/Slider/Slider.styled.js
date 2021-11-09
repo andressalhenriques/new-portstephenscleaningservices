@@ -36,8 +36,11 @@ export const Container = styled.div`
 
 
   @media screen and (max-width: 479px) {
+    h3 {
+      padding-bottom: 20px;
+    }
     .awssld__container {
-        padding-bottom: calc(var(--slider-height-percentage) * 2.25);
+      padding-bottom: calc(var(--slider-height-percentage) * 2.25);
     }
 
     .awssld__wrapper {
@@ -62,14 +65,6 @@ export const Slider = styled.div`
     line-height: 30px;
   }
 
-  @media screen and (max-width: 900px) {
-
-    p {
-      padding: 0 60px;
-      font-size: 1em;
-    }
-  }
-
   h5 {
     padding-top: 5%;
     font-size: 0.75em;
@@ -78,6 +73,15 @@ export const Slider = styled.div`
     line-height: 25.5px;
     text-transform: uppercase;
   }
+
+  @media screen and (max-width: 900px) {
+
+    p {
+      padding: 0 60px;
+      font-size: 1em;
+    }
+  }
+
 
   @media screen and (max-width: 479px) {
 

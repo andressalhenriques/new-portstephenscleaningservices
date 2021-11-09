@@ -67,7 +67,6 @@ class About extends Component{
             </ContainerTitle>
           </Services>
         </ContainerHeader>
-
       </Container>
     )
   }

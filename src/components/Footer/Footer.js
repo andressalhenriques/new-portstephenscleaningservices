@@ -1,6 +1,6 @@
 import React from 'react';
 import { linkedin, instagram, facebook, logo } from '../../assets/index'
-
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 import {
   Container,
   ContainerSocial,
@@ -13,9 +13,9 @@ export default function Footer (){
             <div>
               <h3>Follow us</h3>
               <ContainerSocial>
-                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" class="social__link w-inline-block"><img src={linkedin} loading="lazy" alt="Instagram button" class="instagram is--footer"/></a>
-                <a href="https://www.facebook.com/PortStephensCleaningServices" rel="noreferrer" target="_blank" class="social__link w-inline-block"><img src={facebook} loading="lazy" alt="Instagram button" class="instagram is--footer"/></a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="social__link w-inline-block"><img src={instagram} loading="lazy" alt="Instagram button" class="instagram is--footer"/></a>
+                <a className="animatedElement" href="https://www.instagram.com/" target="_blank" rel="noreferrer" ><FaLinkedinIn/></a>
+                <a className="animatedElement" href="https://www.facebook.com/PortStephensCleaningServices" rel="noreferrer" target="_blank"><FaFacebookF/></a>
+                <a className="animatedElement" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" ><FaInstagram/></a>
               </ContainerSocial>
               <p>Design by andressahenriques.com</p>
             </div>
