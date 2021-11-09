@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   font-size: 1em;
 }
 
+
 html, body, #root {
   width: 100%;
   height: 100%;
@@ -37,7 +38,8 @@ body {
   }
 
   a {
-    color: black;
+    color: ${theme.colors.black30};
+
   }
 
   ul, li  {
@@ -45,21 +47,15 @@ body {
   }
 
   #companyName {
-    color: #fa7b6a;
+    color: ${theme.colors.green10};
   }
 
-  @media screen and (max-width: 500px) {
-
-    h2 {
-      font-size: 10px;
-    }
-  }
 }
 
 `
 
 export const TitleH1 = styled.h1`
-  color: #1c1c1c;
+  color: ${theme.colors.black20};
   width: 100%;
   white-space: pre-wrap;
   transition-timing-function: ease;

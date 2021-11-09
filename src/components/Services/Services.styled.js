@@ -1,32 +1,44 @@
 import styled from 'styled-components'
 import { iconStar } from '../../assets/index'
+import { theme } from '../../theme'
 
 export const Container = styled.div`
   text-align: center;
-  padding: 165px 0;
-  background-color: #F6F6F1;
+  background-color: ${theme.colors.white30};
+  height: 600px;
   position: relative;
 
 
-  #dogShootingstar, #shootingstar {
+  #dogShootingStar, #shootingStar {
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
   }
 
-  #dogShootingstar {
+  #divider2 {
+    width: 100%;
+    margin-top: -2%;
+  }
+
+  #dogShootingStar {
     position: absolute;
-    left: 30%;
+    left: 25%;
     top: auto;
     right: 0%;
     bottom: 0%;
   }
 
-  #shootingstar {
+  #shootingStar {
     position: absolute;
-    top: 3%;
+    top: 0;
     right: 35%;
     bottom: auto;
+  }
+
+  @media screen and (max-width: 1276px) {
+    #dogShootingStar {
+      left: 0;
+    }
   }
 
 @media screen and (max-width: 900px) {
@@ -34,12 +46,9 @@ export const Container = styled.div`
 }
 
 @media screen and (max-width: 479px) {
-  #dogShootingstar {
-    left: 0;
-  }
-  #shootingstar {
-    top: 25%;
-    right: 21%;
+
+  #shootingStar {
+    display: none;
   }
 }
 `
@@ -52,7 +61,7 @@ export const ContainerGrid = styled.div`
   grid-template-rows: auto;
   grid-column-gap: 59px;
   text-align: initial;
-  padding-bottom: 50px;
+  padding-top: 90px;
 
   p {
     margin-bottom: 10px;
@@ -76,7 +85,7 @@ export const ContainerGrid = styled.div`
   }
 
   @media screen and (max-width: 900px) {
-    padding: 0 20px 50px 20px;
+    padding: 0 30px 50px 30px;
     grid-template-columns: 1fr;
   }
 

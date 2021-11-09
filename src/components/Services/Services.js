@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { dogShootingstar, shootingstar } from '../../assets/index'
+import { dogShootingstar, shootingstar, divider2 } from '../../assets/index'
 
 import {
   Container,
@@ -14,8 +14,9 @@ class Services extends Component{
   render (){
     return(
       <Container>
-        <img src={dogShootingstar} id="dogShootingstar" alt="family" />
-        <img src={shootingstar} id="shootingstar" alt="family" />
+        <img src={divider2} id="divider2" alt="Port Stephens Cleaning Services" />
+        <img src={dogShootingstar} id="dogShootingStar" alt="family" />
+        <img src={shootingstar} id="shootingStar" alt="family" />
         <ContainerGrid>
           <div>
             <Title>Relax knowing <span id="companyName">Port Stephens Cleaning Services</span> have got  your back</Title>
