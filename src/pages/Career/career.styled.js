@@ -126,90 +126,12 @@ export const WhatsappLink = styled.a`
   }
 `
 
-export const BodyContainer = styled.div`
-  background: ${theme.colors.white10};
-
-  #dividerBottom {
-    margin-bottom: -5px;
-    width: 100%;
-  }
-
-  #lastElement {
-   padding-bottom: 1em;
-   padding-top: 1em;
-   border-top: 1px solid  ${theme.colors.grey50};
-  }
-
-  h3 {
-    padding-bottom: 20px;
-  }
-
-  .containerTitle{
-    padding: 15px 0 25px 0;
-    font-weight: 500;
-  }
-
-  h4 {
-    padding-bottom: 10px;
-  }
-
-
-  @media screen and (max-width: 479px) {
-    #containerP {
-      width: fit-content;
-    }
-
-    h2 {
-      font-size: 32px;
-    }
-
-  }
-
-`
-
-export const ContainerDocuments = styled.div`
-  margin: 0 6%;
-
-  h3 {
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-
-
-
-  @media screen and (max-width: 479px) {
-    h4 {
-      width: fit-content;
-    }
-
-
-    h3 {
-      font-size: 15px;
-    }
-  }
-`
-export const ContainerList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-column-gap: 40px;
-
-  a {
-    color: ${theme.colors.green10};
-    font-weight: bold;
-  }
-
-  @media screen and (max-width: 479px) {
-    grid-template-columns: 1fr;
-    grid-row-gap: 30px;
-  }
-`
-
 export const ContainerApply = styled.div`
   margin: 6% 25%;
   text-align: center;
 
  .button-contact {
-    margin: 2rem;
+    margin: 2rem;    
   }
 
   h2 {
@@ -224,15 +146,4 @@ export const ContainerApply = styled.div`
     margin: 6%;
   }
 
-`
-
-export const ContainerBecomeACleaner = styled.div`
-  display: grid;
-  row-gap: 4em;
-  width: 65%;
-  margin: 0 auto;
-
-  @media screen and (max-width: 1300px) {
-    width: auto;
-  }
 `

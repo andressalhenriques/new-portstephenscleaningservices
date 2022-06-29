@@ -1,14 +1,18 @@
 import React  from 'react'
 
 import {
-  WhatsappLink,
+  ContainerLink,
 } from  './button.styled'
 
 export function Button ({ text }) {
   return (
-    <WhatsappLink
+    <ContainerLink>
+    <a 
       target="_blank"
-      href="https://api.whatsapp.com/send?phone=61406204408&text=Hi,%20I'd%20like%20to%20request%20a%20cote.">{text}
-      </WhatsappLink>
+      href="mailto:andread@portstephenscleaningservices.com.au">
+      {text}
+    </a><span>Send a resume to Andrea</span>
+    </ContainerLink>
+      
  )
 }

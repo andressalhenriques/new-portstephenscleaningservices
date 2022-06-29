@@ -17,10 +17,11 @@ import {
   ContainerImage,
   ContainerSlider,
   SubTitle,
-  WrapperTalkToUs
+  WrapperTalkToUs,
+  ContainerLink
 } from  './Home.styled'
 
-import { TitleH1, TitleH2 } from '../../GlobalStyles'
+import { TitleH1, TitleH2, TitleH4 } from '../../GlobalStyles'
 
 const Home = () => {
     return(
@@ -45,21 +46,21 @@ const Home = () => {
                   or monthly.
                 </p>
                 <WrapperTalkToUs>
-                <p>We're waiting for your call</p>
+                <TitleH4 className='title-call'>We're waiting for your call</TitleH4>
                 <div>
-                  <div className='container-link'>
-                  <a
+                  <ContainerLink>
+                  <p><a
                     target="_blank"
                     href="https://api.whatsapp.com/send?phone=61406204408&text=Hi,%20I'd%20like%20to%20request%20a%20cote.">
                     <FaWhatsapp/>
                   </a>
-                  +61 406 204 408
-                  </div>
+                  +61 406 204 408</p>
+                  </ContainerLink>
 
-                  <div className='container-link'>
-                    <a className="animatedElement" href="mailto:andressalhenriques@gmail.com" target="_blank" rel="noopener noreferrer" ><FaEnvelopeOpen/></a>
-                    andread@portstephenscleaningservices.com.au
-                  </div>
+                  <ContainerLink>
+                    <p><a className="animatedElement" href="mailto:andressalhenriques@gmail.com" target="_blank" rel="noopener noreferrer" ><FaEnvelopeOpen/></a>
+                    andread@portstephenscleaningservices.com.au</p>
+                  </ContainerLink>
                 </div>
                   </WrapperTalkToUs>
 
@@ -81,19 +82,19 @@ const Home = () => {
           </div>
           <ContainerImage>
             <div>
-              <div className='container-link'>
-              <a
+              <ContainerLink className='container-link'>
+              <p><a
                 target="_blank"
                 href="https://api.whatsapp.com/send?phone=61406204408&text=Hi,%20I'd%20like%20to%20request%20a%20cote.">
                 <FaWhatsapp/>
               </a>
-              +61 406 204 408
-              </div>
+              +61 406 204 408</p>
+              </ContainerLink>
 
-              <div className='container-link'>
-                <a className="animatedElement" href="mailto:andressalhenriques@gmail.com" target="_blank" rel="noopener noreferrer" ><FaEnvelopeOpen/></a>
-                andread@portstephenscleaningservices.com.au
-              </div>
+              <ContainerLink className='container-link'>
+                <p><a className="animatedElement" href="mailto:andressalhenriques@gmail.com" target="_blank" rel="noopener noreferrer" ><FaEnvelopeOpen/></a>
+                andread@portstephenscleaningservices.com.au</p>
+              </ContainerLink>
             </div>
           </ContainerImage>
         </ContainerContact>

@@ -9,21 +9,6 @@ export const Container = styled.div`
     position: absolute;
     z-index: 666;
   }
-
-  .container-link {
-    display: flex;
-    flex-direction: column;
-    
-    a {
-      color: #9bad78;
-      padding-bottom: 15px;
-  
-      svg {
-        width: 2rem;
-        height: 2rem;
-      }
-    }
-  }
 `
 
 export const ContainerContact = styled.div`
@@ -35,14 +20,6 @@ export const ContainerContact = styled.div`
   width: 100%;
   max-width: 2000px;
   margin: 6rem auto;
-
-  .container-link {
-    flex-direction: row;
-  }
-
-  .container-link a {
-    padding-right: 20px;
-  }
 
   h2 {
     text-align: left;
@@ -82,26 +59,13 @@ export const ContainerContact = styled.div`
     img {
       width: 80%;
     }
-
-    .container-link {
-      flex-direction: column;
-      text-align: start;
-    }
-
-    .container-link:nth-child(2) {
-      padding-top: 2rem;
-  }
-  
-    .container-link a {
-      padding-right: 0;
-    }
   }
 
 `
 export const ContainerSlider = styled.div`
   background: ${theme.colors.white10};
 
-  #dividerBottom{
+  #dividerBottom {
     margin-bottom: -1%;
   }
 
@@ -112,7 +76,7 @@ export const ContainerSlider = styled.div`
   @media screen and (max-width: 479px) {
     padding: 0 30px;
 
-    #dividerBottom{
+    #dividerBottom {
       margin-bottom: -2%;
     }
   }
@@ -145,6 +109,34 @@ export const WhatsappLink = styled.a`
 
 export const ContainerImage = styled.div`
   text-align: center;
+
+  .container-link {
+    flex-direction: row;
+
+    p {
+      flex-direction: row;
+      
+      a {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .container-link {  
+      p {
+         flex-direction: column;
+
+         a {
+          padding-right: 0;
+          }
+      }
+    }
+    
+    .container-link:last-child {
+      padding-top: 1rem;
+    }
+  }
 `
 
 export const ContainerHeader = styled.div`
@@ -173,6 +165,16 @@ export const ContainerBody = styled.div`
     padding-top: 5rem;
   }
 
+  .title-call {
+    letter-spacing: 0.2em;
+    background: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    font-weight: 600;
+    padding: 0px;
+  }
+
   @media screen and (max-width: 1200px) {
     padding: 0 30px;
 
@@ -190,6 +192,9 @@ export const ContainerBody = styled.div`
       padding-top: 40px;
     }
 
+    .title-call {
+      font-size: 0.8em;
+    }
   }
 `
 
@@ -240,12 +245,10 @@ export const WrapperTalkToUs = styled.div`
   }
 
   p {
-    letter-spacing: .2em;
     background: none;
-    font-size: 1em;
-    text-transform: uppercase;
+    font-size: 0.8rem;
     line-height: 1.2em;
-    font-weight: 600;
+    font-weight: 500;
     padding: 0;
   }
 
@@ -254,8 +257,42 @@ export const WrapperTalkToUs = styled.div`
     div {
       flex-direction: column;
     }
-
   }
 
 `
+
+export const ContainerLink = styled.div`
+
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+
+    p {
+      display: flex;
+      flex-direction: column;
+      
+      a {
+        color: #9bad78;
+        padding-bottom: 15px;
+    
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+    
+  
+
+  @media screen and (max-width: 479px) {
+      flex-direction: column;
+      text-align: start;
+    
+      p {
+        inline-size: 17rem;
+        overflow-wrap: break-word;
+      }
+  }
+`
+
 
