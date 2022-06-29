@@ -2,11 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   h3 {
-    font-size: 1.5em;
-    padding-top: 70px;
-    font-weight: 400;
-    letter-spacing: 1.8px;
-    line-height: 25.5px;
+    padding-top: 45px;
     text-transform: uppercase;
     text-align: center;
   }
@@ -67,10 +63,6 @@ export const Slider = styled.div`
 
   h5 {
     padding-top: 5%;
-    font-size: 0.75em;
-    font-weight: 300;
-    letter-spacing: 1.8px;
-    line-height: 25.5px;
     text-transform: uppercase;
   }
 

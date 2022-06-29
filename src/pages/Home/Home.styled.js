@@ -3,12 +3,26 @@ import { iconStar } from '../../assets/index'
 import { theme } from '../../theme'
 
 export const Container = styled.div`
-
   #dividerTop {
     width: 100%;
     margin-top: -2%;
     position: absolute;
     z-index: 666;
+  }
+
+  .container-link {
+    display: flex;
+    flex-direction: column;
+    
+    a {
+      color: #9bad78;
+      padding-bottom: 15px;
+  
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
   }
 `
 
@@ -20,8 +34,15 @@ export const ContainerContact = styled.div`
 
   width: 100%;
   max-width: 2000px;
-  margin: 0 auto;
+  margin: 6rem auto;
 
+  .container-link {
+    flex-direction: row;
+  }
+
+  .container-link a {
+    padding-right: 20px;
+  }
 
   h2 {
     text-align: left;
@@ -60,6 +81,19 @@ export const ContainerContact = styled.div`
 
     img {
       width: 80%;
+    }
+
+    .container-link {
+      flex-direction: column;
+      text-align: start;
+    }
+
+    .container-link:nth-child(2) {
+      padding-top: 2rem;
+  }
+  
+    .container-link a {
+      padding-right: 0;
     }
   }
 
@@ -135,6 +169,10 @@ export const ContainerBody = styled.div`
   margin-bottom: 65px;
   align-self: center;
 
+  h1 {
+    padding-top: 5rem;
+  }
+
   @media screen and (max-width: 1200px) {
     padding: 0 30px;
 
@@ -147,10 +185,11 @@ export const ContainerBody = styled.div`
     width: fit-content;
     padding: 0 30px;
 
-    h1 {
-      font-size: 36px;
+    #companyName{
+      font-size: 34px;
       padding-top: 40px;
     }
+
   }
 `
 
@@ -189,3 +228,34 @@ export const ContainerP = styled.div`
     font-family: Raleway, sans-serif;
   }
 `
+
+export const WrapperTalkToUs = styled.div`
+  padding-top: 3rem;
+
+  div {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+
+  p {
+    letter-spacing: .2em;
+    background: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    font-weight: 600;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 479px) {
+    
+    div {
+      flex-direction: column;
+    }
+
+  }
+
+`
+

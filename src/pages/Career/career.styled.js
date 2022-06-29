@@ -1,17 +1,18 @@
 import styled from 'styled-components'
 import { iconStar } from '../../assets/index'
+import { theme } from '../../theme'
 
 
 export const ContainerHeader = styled.div`
-  background: #F7F9F9;
-  z-index: 55;
+  background: ${theme.colors.white20};
   position: relative;
+  z-index: 55;
 
   #divider {
-    width: 100%;
     margin-top: -2%;
     position: absolute;
     z-index: 666;
+    width: 100%;
   }
 
 `
@@ -40,43 +41,31 @@ export const ContainerAboutBody = styled.div`
   margin-bottom: 65px;
   align-self: center;
 
-  h2 {
-    padding-bottom: 15px;
-  }
-
   h3 {
-    font-size: 1.7em;
-    line-height: 1.8em;
-    font-weight: 300;
+    padding-bottom: 15px;
+    text-align: left;
   }
 
-  h2, h3, h4 {
-    font-weight: 500;
-  }
-
-  #companyName {
-    font-weight: bold;
-  }
 
   @media screen and (max-width: 1200px) {
-    padding: 0 30px;
+    padding: 0 6%;
+    width: fit-content;
 
     h1 {
       padding-top: 40px;
     }
+
+    h3 {
+      font-size: 1rem;
+    }
   }
 
   @media screen and (max-width: 479px) {
-    width: fit-content;
-    padding: 0 30px;
-
     h3 {
-      font-size: 1.5em;
       padding-bottom: 15px;
     }
 
     h1 {
-      font-size: 36px;
       padding-top: 40px;
     }
   }
@@ -85,10 +74,10 @@ export const ContainerAboutBody = styled.div`
 export const ContainerAbout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr ;
-
   margin: 0 auto;
   max-width: 1138px;
   width: 1138px;
+
   img {
     width: 100%;
   }
@@ -103,40 +92,42 @@ export const ContainerAbout = styled.div`
 
 export const ContainerP = styled.div`
   padding-top: 35px;
+  margin: 0 auto;
+  
   p {
-    margin-bottom: 10px;
-    color: #1c1c1c;
-    font-size: 16px;
-    line-height: 30px;
+    font-family: Raleway, sans-serif;
     background-image: url(${iconStar});
     background-position: 0% 4px;
-    background-size: auto;
     background-repeat: no-repeat;
+    background-size: auto;
+    color: ${theme.colors.black20};
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 10px;
     padding-left: 40px;
     text-align: initial;
-    font-family: Raleway, sans-serif;
   }
 `
 
 export const WhatsappLink = styled.a`
-  border: 2px solid #C9AF45;
-  padding: 14px;
-  letter-spacing: .2em;
   background: none;
+  border: 2px solid ${theme.colors.gold20} ;
   font-size: 0.75em;
-  text-transform: uppercase;
-  line-height: 1.2em;
   font-weight: 600;
+  letter-spacing: .2em;
+  line-height: 1.2em;
+  padding: 14px;
+  text-transform: uppercase;
 
   :hover {
-    color: #ffffff;
     background: black;
     border: none;
+    color: ${theme.colors.white100};
   }
 `
 
 export const BodyContainer = styled.div`
-  background: #F8FAFA;
+  background: ${theme.colors.white10};
 
   #dividerBottom {
     margin-bottom: -5px;
@@ -146,64 +137,54 @@ export const BodyContainer = styled.div`
   #lastElement {
    padding-bottom: 1em;
    padding-top: 1em;
-   border-top: 1px solid #DCDCDC;
+   border-top: 1px solid  ${theme.colors.grey50};
   }
 
   h3 {
     padding-bottom: 20px;
   }
-  /* padding: 25px 30px; */
-
-  /* #secondElement{
-    padding-top: 7%;
-  }
-  h3 {
-    margin-bottom: 1em;
-    line-height: 1.2em;
-    font-size: 0.75em;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-  } */
 
   .containerTitle{
     padding: 15px 0 25px 0;
-    font-size: 64px;
     font-weight: 500;
   }
 
   h4 {
-    font-weight: 500;
-    width: 48%;
-    line-height:24px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
   }
 
+
   @media screen and (max-width: 479px) {
-    .containerTitle {
+    #containerP {
+      width: fit-content;
+    }
+
+    h2 {
       font-size: 32px;
     }
+
   }
+
 `
 
 export const ContainerDocuments = styled.div`
-  margin: 0 30px;
-  #title {
-    line-height: 1.7em;
+  margin: 0 6%;
+
+  h3 {
     font-size: 20px;
-    letter-spacing: 0.15em;
+    text-transform: uppercase;
   }
 
-  h4 {
-    font-weight: 500;
-  }
+
 
   @media screen and (max-width: 479px) {
-    #title {
-      font-size: 15px;
-    }
-
     h4 {
       width: fit-content;
+    }
+
+
+    h3 {
+      font-size: 15px;
     }
   }
 `
@@ -212,33 +193,35 @@ export const ContainerList = styled.div`
   grid-template-columns: repeat(3,1fr);
   grid-column-gap: 40px;
 
-  /* p {
-    font-size: 1rem;
-    margin-bottom: 24px;
-    padding-bottom: 0;
-    padding-top: 25px;
-    line-height: 170%;
+  a {
+    color: ${theme.colors.green10};
+    font-weight: bold;
   }
-
-  h3 {
-    margin: 20px 0;
-  } */
 
   @media screen and (max-width: 479px) {
     grid-template-columns: 1fr;
     grid-row-gap: 30px;
-    /* h3 {
-      margin-top: 5px;
-    } */
   }
 `
 
 export const ContainerApply = styled.div`
-  padding: 30px 0;
+  margin: 6% 25%;
   text-align: center;
+
+ .button-contact {
+    margin: 2rem;
+  }
 
   h2 {
     padding-bottom: 45px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin: 6% 15%;
+  }
+
+  @media screen and (max-width: 479px) {
+    margin: 6%;
   }
 
 `
