@@ -1,6 +1,6 @@
 import React from 'react';
-import { linkedin, instagram, facebook, logo } from '../../assets/index'
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
+import { logo } from '../../assets/index'
+import { FaFacebookF, FaInstagram } from 'react-icons/fa'
 import {
   Container,
   ContainerSocial,
@@ -13,11 +13,11 @@ export default function Footer (){
             <div>
               <h3>Follow us</h3>
               <ContainerSocial>
-                <a className="animatedElement" href="https://www.instagram.com/" target="_blank" rel="noreferrer" ><FaLinkedinIn/></a>
-                <a className="animatedElement" href="https://www.facebook.com/PortStephensCleaningServices" rel="noreferrer" target="_blank"><FaFacebookF/></a>
-                <a className="animatedElement" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" ><FaInstagram/></a>
+                <a className="animatedElement" href="https://www.instagram.com/portstephenscleaningservices/" target="_blank" rel="noopener noreferrer" ><FaInstagram/></a>
+                <a className="animatedElement" href="https://www.facebook.com/PortStephensCleaningServices" rel="noopener noreferrer" target="_blank"><FaFacebookF/></a>
               </ContainerSocial>
-              <p>Design by andressahenriques.com</p>
+              <p>© Port Stephens Cleaning Services | All Rights Reserved | Terms & Conditions</p>
+              <p><a href="https://andressahenriques.com" target="_blank">Design by andressahenriques.com</a></p>
             </div>
 
       </Container>

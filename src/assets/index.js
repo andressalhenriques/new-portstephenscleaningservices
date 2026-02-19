@@ -15,11 +15,6 @@ import ourFocus from './our-focus.png'
 import highQualityService from './high-quality-service.png'
 
 import iconStar from './icon-star.png'
-import facebook from './facebook.png'
-import linkedin from './linkedin.png'
-import instagram from './instagram.png'
-import shootingstar from './shootingstar.png'
-import dogShootingstar from './dog-shootingstar.png'
 import visa from './visa.png'
 import abn from './abn.png'
 import policeCheck from './policeCheck.png'
@@ -41,11 +36,6 @@ export {
   logo,
   ourFocus,
   highQualityService,
-  instagram,
-  facebook,
-  linkedin,
-  shootingstar,
-  dogShootingstar,
   visa,
   abn,
   policeCheck,

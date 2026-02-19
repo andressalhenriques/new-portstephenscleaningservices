@@ -11,13 +11,15 @@ import {
   Slider,
 } from  './Slider.styled'
 
+import { TitleH3, TitleH5 } from '../../GlobalStyles'
+
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 class SliderComponent extends Component{
   render (){
     return(
       <Container>
-        <h3>What our customers say</h3>
+        <TitleH3>What our customers say</TitleH3>
         <AutoplaySlider
           play={true}
           cancelOnInteraction={false}
@@ -33,7 +35,7 @@ class SliderComponent extends Component{
               consistent every time. I will definitely continue to use her
               services and highly recommend her.
             </p>
-            <h5>Laurinda - Anna Bay</h5>
+            <TitleH5>Laurinda - Anna Bay</TitleH5>
           </Slider>
           </div>
           <div>
@@ -41,7 +43,7 @@ class SliderComponent extends Component{
             <p>
               These ladies will redefine what you consider clean and tidy to be!
             </p>
-            <h5>Jack - Corlette</h5>
+            <TitleH5>Jack - Corlette</TitleH5>
           </Slider>
           </div>
           <div>
@@ -49,12 +51,12 @@ class SliderComponent extends Component{
             <p>
               Andrea and her team are very professional. They are always
               flexible with clean times and their rates are most reasonable
-              in the port Stephens area. They do a beautiful and thorough
+              in the Port Stephens area. They do a beautiful and thorough
               job on my residence! My guests always compliment on how clean
               my house is. I can’t thank them enough for their professional
               service!
             </p>
-              <h5>Liz - Corlette</h5>
+              <TitleH5>Liz - Corlette</TitleH5>
           </Slider>
           </div>
           <div>
@@ -63,7 +65,7 @@ class SliderComponent extends Component{
               at Shoal Beach House. Thank you for your attention to detail.
               Look forward to growing our businesses together.
             </p>
-            <h5>Sharon - Nelson bay</h5>
+            <TitleH5>Sharon - Nelson bay</TitleH5>
           </Slider>
           </div>
         </AutoplaySlider>

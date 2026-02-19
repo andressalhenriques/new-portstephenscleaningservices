@@ -6,21 +6,21 @@ import {
   ContainerHeader,
   ContainerTitle,
   Services,
-  SubTitle,
 } from  './About.styled'
 
+import { TitleH2, TitleH4, TitleH5 } from '../../GlobalStyles'
 class About extends Component{
 
   render (){
     return(
       <Container>
-        <h2>Why us</h2>
-        <h3>Our values </h3>
+        <TitleH2>Why us</TitleH2>
+        <TitleH4>Our values </TitleH4>
         <ContainerHeader>
           <Services>
             <img src={ourFocus} id="dividerBottom"alt="Port Stephens Cleaning Services" />
             <ContainerTitle>
-              <SubTitle>Our focus</SubTitle>
+              <TitleH5>Our focus</TitleH5>
               <p>The number one priority for our business is you, our customer!
                 We have built and grown our business around 3 pillars – reliability,
                 consistency and attention to detail. We provide a cleaning service to
@@ -30,7 +30,7 @@ class About extends Component{
           <Services>
             <img src={fastCommunication} id="dividerBottom"alt="Port Stephens Cleaning Services" />
             <ContainerTitle>
-              <SubTitle>Easy, fast communication</SubTitle>
+              <TitleH5>Easy, fast communication</TitleH5>
               <p>
                 We pride ourselves on being a responsive and responsible service and
                 consider prompt and accurate communication with our customers to be
@@ -44,7 +44,7 @@ class About extends Component{
           <Services>
               <img src={highQualityService} id="dividerBottom"alt="Port Stephens Cleaning Services" />
             <ContainerTitle>
-              <SubTitle>Customer satisfaction</SubTitle>
+              <TitleH5>Customer satisfaction</TitleH5>
               <p>
                 Our goal is to make the cleaning of your home or business
                 something that no longer requires your attention or effort, letting
@@ -56,7 +56,7 @@ class About extends Component{
           <Services>
             <img src={customerSatisfaction} id="dividerBottom"alt="Port Stephens Cleaning Services" />
             <ContainerTitle>
-              <SubTitle>High quality service</SubTitle>
+              <TitleH5>High quality service</TitleH5>
                 <p>
                 We live by our reputation, a fact which is displayed in the amount
                 of business we have as a result of customer referrals and the proportion

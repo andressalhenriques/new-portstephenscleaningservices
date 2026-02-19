@@ -8,7 +8,6 @@ export const GlobalStyle = createGlobalStyle`
   outline: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-  font-size: 1em;
 }
 
 
@@ -48,6 +47,7 @@ body {
 
   #companyName {
     color: ${theme.colors.green10};
+    font-weight: bold;
   }
 
 }
@@ -65,16 +65,52 @@ export const TitleH1 = styled.h1`
   font-size: 46px;
   line-height: 120%;
 
+  @media screen and (max-width: 479px) {
+    font-size: 38px;
+  }
 `
 
 export const TitleH2 = styled.h2`
-  font-size: 1.7em;
-  line-height: 1.2em;
+  font-size: 40px;
+  line-height: 1.4em;
   font-weight: 300;
   text-align: center;
 
 
-  @media screen and (max-width: 500px) {
-    font-size: 1.5em;
+  @media screen and (max-width: 479px) {
+    font-size: 25px;
+}
+`
+
+export const TitleH3 = styled.h3`
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  line-height: 25.5px;
+
+
+  @media screen and (max-width: 479px) {
+    font-size: 18px;
+}
+`
+
+export const TitleH4 = styled.h4`
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 170%;
+
+
+  @media screen and (max-width: 479px) {
+    font-size: 15px;
+}
+`
+export const TitleH5 = styled.h5`
+  line-height: 1.2em;
+  font-size: 0.75em;
+  letter-spacing: 0.15em;
+
+
+  @media screen and (max-width: 479px) {
 }
 `

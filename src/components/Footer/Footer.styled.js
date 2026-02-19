@@ -8,6 +8,7 @@ export const Container = styled.div`
 
   p {
     text-align: center;
+    padding-top: 5px;
   }
 
   h3 {
@@ -33,6 +34,7 @@ export const ContainerSocial = styled.div`
   grid-template-columns: repeat(3, 1fr);
   column-gap: 15px;
   text-align: center;
+  padding-bottom: 25px;
 
   .animatedElement {
     width: 60px;
