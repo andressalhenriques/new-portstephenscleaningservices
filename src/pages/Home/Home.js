@@ -31,7 +31,7 @@ const Home = () => {
 
           <ContainerAbout>
             <ContainerBody>
-              <TitleH1>Finally, the life will be easier with <span id="companyName">Port Stephens Cleaning Services</span>. </TitleH1>
+              <TitleH1>Finally, life will be easier with <span id="companyName">Port Stephens Cleaning Services</span>. </TitleH1>
               <p>We're a small family-owned and -operated business located
                   in Nelson Bay-Corlette, and are proud to be relied upon by local
                   and out-of-town property owners to provide detailed, committed
@@ -54,11 +54,11 @@ const Home = () => {
                     href="https://api.whatsapp.com/send?phone=61406204408&text=Hi,%20I'd%20like%20to%20request%20a%20cote.">
                     <FaWhatsapp/>
                   </a>
-                  +61 406 204 408</p>
+                  +61 404 262 199</p>
                   </ContainerLink>
 
                   <ContainerLink>
-                    <p><a className="animatedElement" href="mailto:andressalhenriques@gmail.com" target="_blank" rel="noopener noreferrer" ><FaEnvelopeOpen/></a>
+                    <p><a className="animatedElement" href="mailto:andread@portstephenscleaningservices.com.au" target="_blank" rel="noopener noreferrer" ><FaEnvelopeOpen/></a>
                     andread@portstephenscleaningservices.com.au</p>
                   </ContainerLink>
                 </div>
@@ -88,11 +88,11 @@ const Home = () => {
                 href="https://api.whatsapp.com/send?phone=61406204408&text=Hi,%20I'd%20like%20to%20request%20a%20cote.">
                 <FaWhatsapp/>
               </a>
-              +61 406 204 408</p>
+              +61 404 262 199</p>
               </ContainerLink>
 
               <ContainerLink className='container-link'>
-                <p><a className="animatedElement" href="mailto:andressalhenriques@gmail.com" target="_blank" rel="noopener noreferrer" ><FaEnvelopeOpen/></a>
+                <p><a className="animatedElement" href="mailto:andread@portstephenscleaningservices.com.au" target="_blank" rel="noopener noreferrer" ><FaEnvelopeOpen/></a>
                 andread@portstephenscleaningservices.com.au</p>
               </ContainerLink>
             </div>

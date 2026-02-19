@@ -44,7 +44,8 @@ export const Container = styled.div`
     }
 
     .awssld {
-      max-height: none;
+      height: 32rem;
+      max-height: 32rem;    
     }
   }
 
